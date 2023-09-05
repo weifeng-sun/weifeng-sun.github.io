@@ -1,0 +1,74 @@
+- title: "Revisiting the Identification of the Co-Evolution of Production and Test Code"
+  authors: <b>Weifeng Sun</b>, Meng Yan, Zhongxin Liu, Xin Xia, Yan Lei, David Lo
+  venue:  ACM Transactions on Software Engineering and Methodology (TOSEM, <span style="color:red"><b>CCF-A</b></span>)
+  year: 2023
+  pdf: papers/TOSEM231.pdf
+  remark: TOSEM'23
+  status: Accepted
+ 
+- title: "A first look at bug report templates on GitHub"
+  authors: Hongyan Li, Meng Yan, <b>Weifeng Sun</b>, Xiao Liu, Yunsong Wu
+  venue:  Journal of Systems and Software (JSS, CCF-B)
+  year: 2023
+  pdf: papers/JSS231.pdf
+  remark: JSS'23
+  status: Accepted
+
+- title: "VPP-ART: An Efficient Implementation of Fixed-Size-Candidate-Set Adaptive Random Testing Using Vantage Point Partitioning"
+  authors: Rubing Huang, Chenhui Cui, Dave Towey, <b>Weifeng Sun</b>, Junlong Lian
+  venue:  IEEE Transactions on Reliability (TR, JCR Q1)
+  year: 2023
+  pdf: papers/TR231.pdf
+  remark: TR'23
+  status: Accepted
+
+- title: "A nearest-neighbor divide-and-conquer approach for adaptive random testing"
+  authors: Rubing Huang, <b>Weifeng Sun*</b>, Haibo Chen, Chenhui Cui, Ning Yang
+  venue:  Science of Computer Programming (SCP, CCF-B, Corresponding Author)
+  year: 2022
+  pdf: papers/SCP221.pdf
+  remark: SCP'22
+  status: Accepted
+
+- title: "Candidate test set reduction for adaptive random testing: An overheads reduction technique"
+  authors: Rubing Huang, Haibo Chen, <b>Weifeng Sun</b>, Dave Towey
+  venue:  Science of Computer Programming (SCP, CCF-B) (<span style="color:orange"><b>Invited to SANER 2023 as part of the Journal First Paper Track</b></span>)
+  year: 2022
+  pdf: papers/SCP222.pdf
+  remark: SCP'22
+  status: Accepted
+
+- title: "Regression test case prioritization by code combinations coverage"
+  authors: Rubing Huang, Quanjun Zhang, Dave Towey, <b>Weifeng Sun</b>, Jinfu Chen
+  venue:  Journal of Systems and Software (JSS, CCF-B)
+  year: 2021
+  pdf: papers/JSS211.pdf
+  remark: JSS'21
+  status: Accepted
+
+- title: "Identification of failure regions for programs with numeric inputs"
+  authors: Rubing Huang,<b>Weifeng Sun</b>, Tsong Yueh Chen, Sebastian Ng, Jinfu Chen
+  venue:  IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI, JCR Q2)
+  year: 2020
+  pdf: papers/TETCI201.pdf
+  remark: TETCI'20
+  status: Accepted
+
+- title: "A survey on adaptive random testing"
+  authors: Rubing Huang, <b>Weifeng Sun</b>, Yinyin Xu, Haibo Chen, Dave Towey, Xin Xia
+  venue:  IEEE Transactions on Software Engineering (TSE, <span style="color:red"><b>CCF-A</b></span>)
+  year: 2019
+  pdf: papers/TSE191.pdf
+  remark: TSE'19
+  status: Accepted
+
+- title: "Abstract test case prioritization using repeated small-strength level-combination coverage"
+  authors: Rubing Huang, <b>Weifeng Sun</b>, Tsong Yueh Chen, Dave Towey, Jinfu Chen, Weiwen Zong, Yunan Zhou
+  venue:  IEEE Transactions on Reliability (TR, JCR Q1)
+  year: 2019
+  pdf: papers/TR191.pdf
+  remark: TR'19
+  status: Accepted
+
+
+

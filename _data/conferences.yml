@@ -1,0 +1,47 @@
+- title: "Revisiting and Improving Retrieval-Augmented Deep Assertion Generation"
+  authors:  <b>Weifeng Sun</b>, Hongyan Li, Meng Yan, Yan Lei, Hongyu Zhang
+  venue: The 38th IEEE/ACM International Conference on Automated Software Engineering (ASE <span style="color:red"><b>CCF-A</b></span>), Full paper
+  year: 2023
+  status: Accepted
+  remark: ASE'23
+  pdf: papers/ASE231.pdf
+
+- title: "An Adaptive Partition-Based Approach for Adaptive Random Testing on Real Programs"
+  authors:  Yisheng Xia, <b>Weifeng Sun</b>, Meng Yan, Lei Xu, Dan Yang
+  venue: The 30th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER, CCF-B), Short paper
+  year: 2023
+  status: Accepted
+  remark: SANER'23
+  pdf: papers/SANER231.pdf
+
+- title: "KD-RRT: Restricted Random Testing based on K-Dimensional Tree"
+  authors:  Junlong Lian, Chenhui Cui, <b>Weifeng Sun</b>, Yiming Wu, Rubing Huang
+  venue: The 8th International Conference on Dependable Systems and Their Applications (DSA, EI)
+  year: 2021
+  status: Accepted
+  remark: DSA'21
+  pdf: papers/DSA211.pdf
+
+- title: "Which type of exclusion region is better for restricted random testing? an empirical study"
+  authors:  <b>Weifeng Sun</b>, Rubing Huang, Chenhui Cui, Haibo Chen, Weijie Liu
+  venue: The 36th Annual ACM Symposium on Applied Computing (SAC, EI), Short paper
+  year: 2021
+  status: Accepted
+  remark: SAC'21
+  pdf: papers/SAC211.pdf
+
+- title: "Poster: Is euclidean distance the best distance measurement for adaptive random testing?"
+  authors:  Rubing Huang, Chenhui Cui, <b>Weifeng Sun</b>, Dave Towey
+  venue: The 13th International Conference on Software Testing, Validation and Verification (ICST, CCF-C), Poster Track
+  year: 2020
+  status: Accepted
+  remark: ICST'20
+  pdf: papers/ICST201.pdf
+
+# - title: "On the selection of strength for fixed-strength interaction coverage based prioritization"
+#   authors:  Rubing Huang, Chenhui Cui, <b>Weifeng Sun</b>, Dave Towey
+#   venue: The 42nd Annual Computer Software and Applications Conference (COMPSAC), Short paper
+#   year: 2018
+#   status: Accepted
+#   remark: COMPSAC'18
+#   pdf: papers/COMPSAC181.pdf
