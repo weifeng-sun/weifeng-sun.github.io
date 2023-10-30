@@ -1,3 +1,11 @@
+- title: "Robust Test Selection for Deep Neural Networks"
+  authors: <b>Weifeng Sun</b>, Meng Yan, Zhongxin Liu, David Lo
+  venue:  IEEE Transactions on Software Engineering (TSE, <span style="color:red"><b>CCF-A</b></span>)
+  year: 2023
+  pdf: papers/TSE231.pdf
+  remark: TSE'23
+  status: Accepted
+
 - title: "Revisiting the Identification of the Co-Evolution of Production and Test Code"
   authors: <b>Weifeng Sun</b>, Meng Yan, Zhongxin Liu, Xin Xia, Yan Lei, David Lo
   venue:  ACM Transactions on Software Engineering and Methodology (TOSEM, <span style="color:red"><b>CCF-A</b></span>)
