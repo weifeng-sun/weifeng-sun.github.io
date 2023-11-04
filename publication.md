@@ -4,6 +4,7 @@ title: Publication
 permalink: /publication/
 ---
 <section class="section projects-section">
+	<span class="C9DxTc " style="color: #6b5d40; font-family: Arial; font-size: 11.0pt; font-weight: 700; vertical-align: baseline;">* refers to the corresponding author.&nbsp; ✰ refers to equal contribution.</span>
     <div class="intro">
         <p class="section-title">Journal</p>
     </div><!--//intro-->
