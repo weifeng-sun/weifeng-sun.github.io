@@ -1,3 +1,11 @@
+- title: "DFEPT: Data Flow Embedding for Enhancing Pre-Trained Model Based Vulnerability Detection"
+  authors:  Zhonghao Jiang, <b>Weifeng Sun</b>, Xiaoyan Gu, Jiaxin Wu, Tao Wen, Haibo Hu, Meng Yan
+  venue: The 15th Asia-Pacific Symposium on Internetware (Internetware, CCF-C), Full paper
+  year: 2024
+  status: Accepted
+  remark: Internetware'24
+  pdf: papers/Internetware241.pdf
+
 - title: "Just-In-Time Method Name Updating With Heuristics and Neural Model"
   authors:  Zhenting Guo, Meng Yan, Hongyan Li, Zhezhe Chen, <b>Weifeng Sun</b>
   venue: The 23rd IEEE International Conference on Software Quality, Reliability, and Security (QRS, CCF-C), Full paper
