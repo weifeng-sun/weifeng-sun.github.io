@@ -4,13 +4,12 @@ title: Services
 permalink: /service/
 ---
 
-<!-- ## 2023
+## Journal Review
 
 <ol>
-<li>Program Commitee -- SANER 2023 </li>
-<li>Program Commitee -- ICSE 2023 Demo Track</li>
+<li>ACM Transactions on Software Engineering and Methodology (TOSEM)</li>
 </ol>
-
+<!-- 
 ## 2022
 
 <ol>
