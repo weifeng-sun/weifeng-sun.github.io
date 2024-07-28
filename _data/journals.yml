@@ -1,3 +1,11 @@
+- title: "Neuron Semantic-Guided Test Generation for Deep Neural Networks Fuzzing"
+  authors: Li Huang✰, <b>Weifeng Sun✰</b>, Meng Yan, Zhongxin Liu, Yan Lei, David Lo
+  venue:  ACM Transactions on Software Engineering and Methodology (TOSEM, CCF-A)
+  year: 2024
+  pdf: papers/TOSEM241.pdf
+  remark: TOSEM'24
+  status: Accepted
+
 - title: "Toward Cost-effective Adaptive Random Testing: An Approximate Nearest Neighbor Approach"
   authors: Rubing Huang, Chenhui Cui, Junlong Lian, Dave Towey, <b>Weifeng Sun</b>, Haibo Chen
   venue:  IEEE Transactions on Software Engineering (TSE, CCF-A)
