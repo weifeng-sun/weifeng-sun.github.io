@@ -1,3 +1,11 @@
+- title: "Method-Level Test-to-Code Traceability Link Construction by Semantic Correlation Learning"
+  authors: <b>Weifeng Sun</b>, Zhenting Guo, Meng Yan, Zhongxin Liu, Yan Lei, Hongyu Zhang
+  venue:  IEEE Transactions on Software Engineering (TSE, CCF-A)
+  year: 2024
+  pdf: papers/TSE242.pdf
+  remark: TSE'24
+  status: Accepted
+
 - title: "Neuron Semantic-Guided Test Generation for Deep Neural Networks Fuzzing"
   authors: Li Huang✰, <b>Weifeng Sun✰</b>, Meng Yan, Zhongxin Liu, Yan Lei, David Lo
   venue:  ACM Transactions on Software Engineering and Methodology (TOSEM, CCF-A)
