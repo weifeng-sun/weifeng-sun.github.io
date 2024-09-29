@@ -1,3 +1,11 @@
+- title: "Exploring Automated Assertion Generation via Large Language Models"
+  authors: Quanjun Zhang✰, <b>Weifeng Sun✰</b>, Chunrong Fang, Bowen Yu, Hongyan Li, Meng Yan, Jianyi Zhou, Zhenyu Chen
+  venue:  ACM Transactions on Software Engineering and Methodology (TOSEM, CCF-A)
+  year: 2024
+  pdf: papers/TOSEM242.pdf
+  remark: TOSEM'24
+  status: Accepted
+  
 - title: "Method-Level Test-to-Code Traceability Link Construction by Semantic Correlation Learning"
   authors: <b>Weifeng Sun</b>, Zhenting Guo, Meng Yan, Zhongxin Liu, Yan Lei, Hongyu Zhang
   venue:  IEEE Transactions on Software Engineering (TSE, CCF-A)
