@@ -1,3 +1,11 @@
+- title: "Iterative Generation of Adversarial Example for Deep Code Models"
+  authors:  Li Huang, <b>Weifeng Sun</b>, Meng Yan
+  venue: The 47th IEEE/ACM International Conference on Software Engineering (ICSE, CCF-A), Full paper
+  year: 2025
+  status: Accepted
+  remark: ICSE'25
+  pdf: papers/ICSE251.pdf
+
 - title: "DFEPT: Data Flow Embedding for Enhancing Pre-Trained Model Based Vulnerability Detection"
   authors:  Zhonghao Jiang, <b>Weifeng Sun</b>, Xiaoyan Gu, Jiaxin Wu, Tao Wen, Haibo Hu, Meng Yan
   venue: The 15th Asia-Pacific Symposium on Internetware (Internetware, CCF-C), Full paper
