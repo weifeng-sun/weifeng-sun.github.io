@@ -1,3 +1,11 @@
+- title: "TAB: Template-Aware Bug Report Title Generation via Two-Phase Fine-tuned Models"
+  authors: Xiao Liu, Yinkang Xu, <b>Weifeng Sun*</b>, Naiqi Huang, Song Sun, Qiang Li, Dan Yang, Meng Yan*
+  venue:  Automated Software Engineering (ASEJ, CCF-B)
+  year: 2025
+  pdf: papers/ASEJ251.pdf
+  remark: ASEJ'25
+  status: Accepted
+
 - title: "Exploring Automated Assertion Generation via Large Language Models"
   authors: Quanjun Zhang✰, <b>Weifeng Sun✰</b>, Chunrong Fang, Bowen Yu, Hongyan Li, Meng Yan, Jianyi Zhou, Zhenyu Chen
   venue:  ACM Transactions on Software Engineering and Methodology (TOSEM, CCF-A)
