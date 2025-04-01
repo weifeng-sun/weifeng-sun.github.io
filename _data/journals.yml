@@ -1,3 +1,11 @@
+- title: "Retrieval-Augmented Fine-Tuning for Improving Retrieve-and-Edit Based Assertion Generation"
+  authors: Hongyan Li✰, <b>Weifeng Sun✰</b>, Meng Yan, Ling Xu, Qiang Li, Xiaohong Zhang, Hongyu Zhang
+  venue:  IEEE Transactions on Software Engineering (TSE, CCF-A)
+  year: 2025
+  pdf: papers/TSE251.pdf
+  remark: TSE'25
+  status: Accepted
+
 - title: "TAB: Template-Aware Bug Report Title Generation via Two-Phase Fine-tuned Models"
   authors: Xiao Liu, Yinkang Xu, <b>Weifeng Sun*</b>, Naiqi Huang, Song Sun, Qiang Li, Dan Yang, Meng Yan*
   venue:  Automated Software Engineering (ASEJ, CCF-B)
