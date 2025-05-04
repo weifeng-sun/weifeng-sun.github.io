@@ -1,3 +1,11 @@
+- title: "DeepVec: State-Vector Aware Test Case Selection for Enhancing Recurrent Neural Network"
+  authors: Zhonghao Jiang, Meng Yan, Li Huang, <b>Weifeng Sun</b>, Chao Liu, Song Sun, David Lo
+  venue:  IEEE Transactions on Software Engineering (TSE, CCF-A)
+  year: 2025
+  pdf: papers/TSE252.pdf
+  remark: TSE'25
+  status: Accepted
+
 - title: "Retrieval-Augmented Fine-Tuning for Improving Retrieve-and-Edit Based Assertion Generation"
   authors: Hongyan Li✰, <b>Weifeng Sun✰</b>, Meng Yan, Ling Xu, Qiang Li, Xiaohong Zhang, Hongyu Zhang
   venue:  IEEE Transactions on Software Engineering (TSE, CCF-A)
