@@ -1,0 +1,11 @@
+---
+all:
+  total: 17
+  first: 12
+  cofirst: 3
+  corresponding: 2
+selected:
+  total: 14
+  first: 9
+  cofirst: 3
+  corresponding: 2

@@ -1,0 +1,37 @@
+---
+AAAI:
+  color: "#0891b2"
+ACL Findings:
+  color: "#0f766e"
+ASE:
+  color: "#b509ac"
+ASEJ:
+  color: "#7c3aed"
+DSA:
+  color: "#2563eb"
+EMSE:
+  color: "#4b5563"
+ICSE:
+  color: "#0f766e"
+ICST:
+  color: "#ca8a04"
+Internetware:
+  color: "#dc2626"
+JSS:
+  color: "#4b5563"
+QRS:
+  color: "#0891b2"
+SAC:
+  color: "#b509ac"
+SANER:
+  color: "#7c3aed"
+SCP:
+  color: "#2563eb"
+TETCI:
+  color: "#0f766e"
+TOSEM:
+  color: "#ca8a04"
+TR:
+  color: "#dc2626"
+TSE:
+  color: "#4b5563"

@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<div class="academic-home">
+  <section class="home-hero">
+    <div class="home-hero__copy">
+      <p class="home-kicker">{{ page.hero.kicker | default: page.subtitle }}</p>
+      <h1>
+        {% if site.title == 'blank' %}
+          <span>{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
+        {% else %}
+          {{ site.title }}
+        {% endif %}
+      </h1>
+      <p class="home-hero__summary">{{ page.hero.summary }}</p>
+
+      <div class="home-actions" aria-label="Profile links">
+        {% for link in page.hero.links %}
+          <a href="{{ link.url | relative_url }}" {% if link.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+            {% if link.icon %}<i class="{{ link.icon }}" aria-hidden="true"></i>{% endif %}
+            <span>{{ link.label }}</span>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    {% if page.profile and page.profile.image %}
+      <aside class="home-hero__profile">
+        {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+        {%
+          include figure.liquid loading="eager" path=profile_image_path class="home-profile-photo" alt=site.title
+          cache_bust=true
+        %}
+        {% if page.profile.more_info %}
+          <div class="home-profile-meta">{{ page.profile.more_info }}</div>
+        {% endif %}
+      </aside>
+    {% endif %}
+  </section>
+
+  <article class="home-content">
+    <section class="home-section home-intro">
+      {{ content }}
+    </section>
+
+    {% if page.selected_papers %}
+      <section class="home-section">
+        <div class="section-heading section-heading--link">
+          <h2>Selected Publications</h2>
+          <a href="{{ '/publications/' | relative_url }}">View all</a>
+        </div>
+        <p class="publication-note">
+          {{ site.data.publication_stats.selected.total }} selected ·
+          † first author {{ site.data.publication_stats.selected.first }} ·
+          ✰ co-first author {{ site.data.publication_stats.selected.cofirst }} ·
+          * corresponding author {{ site.data.publication_stats.selected.corresponding }}
+        </p>
+        <div class="featured-publications">
+          {% include selected_papers.liquid %}
+        </div>
+      </section>
+    {% endif %}
+  </article>
+</div>
