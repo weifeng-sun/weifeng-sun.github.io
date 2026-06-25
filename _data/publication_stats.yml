@@ -1,11 +1,11 @@
 ---
 all:
-  total: 17
-  first: 12
+  total: 19
+  first: 14
   cofirst: 3
   corresponding: 2
 selected:
-  total: 14
-  first: 9
+  total: 16
+  first: 11
   cofirst: 3
   corresponding: 2
