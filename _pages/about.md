@@ -9,7 +9,7 @@ hero:
   summary: I study intelligent software engineering, with a focus on AI for software engineering and software engineering for AI systems.
   links:
     - label: Email
-      url: mailto:weifeng.sun@cqu.edu.cn
+      url: mailto:wfsun@smu.edu.sg
       icon: fa-solid fa-envelope
     - label: Publications
       url: /publications/
@@ -33,33 +33,33 @@ announcements:
 latest_posts:
   enabled: false
 
-research_interests:
-  - title: Software Testing
-    description: Test generation, test selection, test prioritization, and reliability assessment for traditional and intelligent software.
-  - title: AI for SE
-    description: Large language models and learning-based techniques for assertion generation, bug report understanding, and developer productivity.
-  - title: Software Evolution
-    description: Traceability, co-evolution, repository mining, and maintenance-oriented program analysis.
-
 news:
+  - date: 2026
+    text: One paper on security-fix backporting for GitHub Actions workflows accepted to ICSE 2027.
+  - date: 2026
+    text: Four papers accepted to ASE 2026, including our first-author study on how reasoning shapes social bias in LLM-generated code.
+  - date: 2026
+    text: Three papers accepted to ISSTA 2026, including our first-author work on model editing for secure code generation.
+  - date: 2026
+    text: MultiCodeAttack, our jailbreak attack on code LLMs, accepted to ACL 2026 Findings.
   - date: 2025
-    text: One paper accepted by ICSE 2025 with an ACM SIGSOFT Distinguished Paper Award.
-  - date: 2025
-    text: Multiple journal papers accepted by IEEE TSE and Automated Software Engineering.
-  - date: 2024
-    text: Selected for the Young Elite Scientists Sponsorship Program by CAST.
+    text: Our ICSE 2025 paper received an ACM SIGSOFT Distinguished Paper Award.
 
 education:
-  - period: 2021 - Now
-    text: Ph.D. Student, School of Big Data & Software Engineering, Chongqing University
-  - period: 2018 - 2021
+  - period: Present
+    text: Research Scientist, Singapore Management University
+  - period: 2021–2025
+    text: Ph.D. in Software Engineering, Chongqing University
+  - period: 2018–2021
     text: M.A.Sc. in Software Engineering, Jiangsu University
-  - period: 2014 - 2018
+  - period: 2014–2018
     text: B.Eng. in Software Engineering, Jiangsu University
 
 awards:
+  - year: 2025
+    text: ACM SIGSOFT Distinguished Paper Award, ICSE 2025
   - year: 2024
-    text: 首届中国科协青年人才托举工程(博士生专项计划)入选者
+    text: Young Elite Scientists Sponsorship Program (Doctoral Student Special Plan), CAST
   - year: 2024
     text: National Scholarship, Ministry of Education
   - year: 2021

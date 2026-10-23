@@ -44,22 +44,69 @@ layout: default
       {{ content }}
     </section>
 
+    {% if page.news %}
+      <section class="home-section">
+        <div class="section-heading">
+          <h2>News</h2>
+        </div>
+        <ul class="news-list">
+          {% for item in page.news %}
+            <li>
+              <time>{{ item.date }}</time>
+              <span>{{ item.text }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+
     {% if page.selected_papers %}
       <section class="home-section">
         <div class="section-heading section-heading--link">
           <h2>Selected Publications</h2>
           <a href="{{ '/publications/' | relative_url }}">View all</a>
         </div>
-        <p class="publication-note">
-          {{ site.data.publication_stats.selected.total }} selected ·
-          † first author {{ site.data.publication_stats.selected.first }} ·
-          ✰ co-first author {{ site.data.publication_stats.selected.cofirst }} ·
-          * corresponding author {{ site.data.publication_stats.selected.corresponding }}
-        </p>
+        <p class="publication-note">† first author · ✰ co-first author · * corresponding author</p>
         <div class="featured-publications">
           {% include selected_papers.liquid %}
         </div>
       </section>
+    {% endif %}
+
+    {% if page.education or page.awards %}
+      <div class="home-columns">
+        {% if page.education %}
+          <section class="home-section">
+            <div class="section-heading">
+              <h2>Experience &amp; Education</h2>
+            </div>
+            <ul class="timeline-list">
+              {% for item in page.education %}
+                <li>
+                  <time>{{ item.period }}</time>
+                  <span>{{ item.text }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          </section>
+        {% endif %}
+
+        {% if page.awards %}
+          <section class="home-section">
+            <div class="section-heading">
+              <h2>Awards</h2>
+            </div>
+            <ul class="timeline-list">
+              {% for item in page.awards %}
+                <li>
+                  <time>{{ item.year }}</time>
+                  <span>{{ item.text }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          </section>
+        {% endif %}
+      </div>
     {% endif %}
   </article>
 </div>

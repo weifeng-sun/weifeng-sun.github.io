@@ -5,7 +5,7 @@ all:
   cofirst: 3
   corresponding: 2
 selected:
-  total: 16
-  first: 11
-  cofirst: 3
-  corresponding: 2
+  total: 8
+  first: 6
+  cofirst: 2
+  corresponding: 0

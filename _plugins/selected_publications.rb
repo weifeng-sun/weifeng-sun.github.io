@@ -4,6 +4,8 @@ module SelectedPublications
     "cofirst" => 1,
     "corresponding" => 2
   }.freeze
+  SELECTED_CONTRIBUTIONS = %w[first cofirst].freeze
+  SELECTED_LIMIT = 8
 
   def self.run(site)
     source = site.source
@@ -23,14 +25,15 @@ module SelectedPublications
 
     selected = entries.filter_map do |entry|
       contribution = field(entry[:body], "contribution")
-      next unless RANK.key?(contribution)
-      next unless ccf_a_or_b?(entry[:body])
+      next unless SELECTED_CONTRIBUTIONS.include?(contribution)
+      next unless ccf_a?(entry[:body])
 
       year = field(entry[:body], "year").to_i
       entry.merge(rank: RANK[contribution], year: year)
     end
 
     selected.sort_by! { |entry| [-entry[:year], entry[:rank], entry[:index]] }
+    selected = selected.first(SELECTED_LIMIT)
     content = selected.map { |entry| entry[:body].strip }.join("\n\n")
     File.write(output_path, "---\n---\n\n#{content}\n")
     File.write(stats_path, stats_yaml(marked_entries, selected))
@@ -73,8 +76,8 @@ module SelectedPublications
     match && match[1].strip.downcase
   end
 
-  def self.ccf_a_or_b?(entry)
-    entry.match?(/CCF\s*-\s*[AB]/i)
+  def self.ccf_a?(entry)
+    entry.match?(/CCF\s*-\s*A/i)
   end
 
   def self.stats_yaml(marked_entries, selected)
