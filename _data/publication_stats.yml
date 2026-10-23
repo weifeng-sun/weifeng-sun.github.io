@@ -1,11 +1,12 @@
 ---
+papers: 39
 all:
   total: 19
   first: 14
   cofirst: 3
   corresponding: 2
 selected:
-  total: 8
-  first: 6
-  cofirst: 2
+  total: 13
+  first: 10
+  cofirst: 3
   corresponding: 0

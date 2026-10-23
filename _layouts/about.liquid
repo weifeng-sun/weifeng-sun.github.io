@@ -3,46 +3,60 @@ layout: default
 ---
 
 <div class="academic-home">
-  <section class="home-hero">
-    <div class="home-hero__copy">
-      <p class="home-kicker">{{ page.hero.kicker | default: page.subtitle }}</p>
-      <h1>
-        {% if site.title == 'blank' %}
-          <span>{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
-        {% else %}
-          {{ site.title }}
-        {% endif %}
-      </h1>
-      <p class="home-hero__summary">{{ page.hero.summary }}</p>
-
-      <div class="home-actions" aria-label="Profile links">
-        {% for link in page.hero.links %}
-          <a href="{{ link.url | relative_url }}" {% if link.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
-            {% if link.icon %}<i class="{{ link.icon }}" aria-hidden="true"></i>{% endif %}
-            <span>{{ link.label }}</span>
-          </a>
-        {% endfor %}
-      </div>
-    </div>
-
-    {% if page.profile and page.profile.image %}
-      <aside class="home-hero__profile">
-        {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-        {%
-          include figure.liquid loading="eager" path=profile_image_path class="home-profile-photo" alt=site.title
-          cache_bust=true
-        %}
-        {% if page.profile.more_info %}
-          <div class="home-profile-meta">{{ page.profile.more_info }}</div>
-        {% endif %}
-      </aside>
+  <aside class="home-sidebar">
+    {% if page.profile.image %}
+      {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+      {%
+        include figure.liquid loading="eager" path=profile_image_path class="home-profile-photo" alt=site.title
+        cache_bust=true
+      %}
     {% endif %}
-  </section>
+    <h1 class="home-name">{{ site.title }}</h1>
+    {% if page.profile.position %}<p class="home-position">{{ page.profile.position }}</p>{% endif %}
+    {% if page.profile.affiliation %}<p class="home-affiliation">{{ page.profile.affiliation }}</p>{% endif %}
+
+    <ul class="home-links">
+      {% if page.profile.location %}
+        <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>{{ page.profile.location }}</span></li>
+      {% endif %}
+      {% for link in page.profile.links %}
+        <li>
+          <i class="{{ link.icon }}" aria-hidden="true"></i>
+          <a href="{{ link.url | relative_url }}" {% if link.external %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.label }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </aside>
 
   <article class="home-content">
     <section class="home-section home-intro">
       {{ content }}
     </section>
+
+    {% if page.research %}
+      <section class="home-section">
+        <div class="section-heading">
+          <h2>Research Interests</h2>
+        </div>
+        {% assign scholar = site.data.scholar %}
+        {% comment %} Round down to a multiple of 5 strictly below the total, so "over N" stays true. {% endcomment %}
+        {% assign paper_floor = site.data.publication_stats.papers | minus: 1 | divided_by: 5 | times: 5 %}
+        {% capture citation_badge %}
+          <a class="citation-badge" href="https://scholar.google.com/citations?user={{ scholar.user_id }}&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar, updated {{ scholar.last_updated }}">
+            <span class="citation-badge__label"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> citations</span>
+            <span class="citation-badge__count">{{ scholar.citations }}</span>
+          </a>
+        {% endcapture %}
+        <p class="research-intro">
+          {{ page.research.intro | replace: '[papers]', paper_floor | replace: '[citations]', citation_badge }}
+        </p>
+        <ul class="research-list">
+          {% for item in page.research.items %}
+            <li><strong>{{ item.title }}:</strong> {{ item.text }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
 
     {% if page.news %}
       <section class="home-section">

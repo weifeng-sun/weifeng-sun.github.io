@@ -1,11 +1,9 @@
 module SelectedPublications
   RANK = {
     "first" => 0,
-    "cofirst" => 1,
-    "corresponding" => 2
+    "corresponding" => 1,
+    "cofirst" => 2
   }.freeze
-  SELECTED_CONTRIBUTIONS = %w[first cofirst].freeze
-  SELECTED_LIMIT = 8
 
   def self.run(site)
     source = site.source
@@ -25,18 +23,17 @@ module SelectedPublications
 
     selected = entries.filter_map do |entry|
       contribution = field(entry[:body], "contribution")
-      next unless SELECTED_CONTRIBUTIONS.include?(contribution)
+      next unless RANK.key?(contribution)
       next unless ccf_a?(entry[:body])
 
       year = field(entry[:body], "year").to_i
       entry.merge(rank: RANK[contribution], year: year)
     end
 
-    selected.sort_by! { |entry| [-entry[:year], entry[:rank], entry[:index]] }
-    selected = selected.first(SELECTED_LIMIT)
+    selected.sort_by! { |entry| [entry[:rank], -entry[:year], entry[:index]] }
     content = selected.map { |entry| entry[:body].strip }.join("\n\n")
     File.write(output_path, "---\n---\n\n#{content}\n")
-    File.write(stats_path, stats_yaml(marked_entries, selected))
+    File.write(stats_path, stats_yaml(entries, marked_entries, selected))
   end
 
   def self.parse_entries(text)
@@ -80,12 +77,13 @@ module SelectedPublications
     entry.match?(/CCF\s*-\s*A/i)
   end
 
-  def self.stats_yaml(marked_entries, selected)
+  def self.stats_yaml(entries, marked_entries, selected)
     all_counts = counts(marked_entries)
     selected_counts = counts(selected)
 
     <<~YAML
       ---
+      papers: #{entries.length}
       all:
         total: #{all_counts[:total]}
         first: #{all_counts[:first]}
